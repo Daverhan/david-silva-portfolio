@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import ProfilePicture from "../assets/profile.webp";
+---
+
+<section class="flex flex-col max-w-screen-2xl mx-auto">
+  <div class="mt-6 text-center text-[#45505b] font-poppins">
+    <h2 class="text-4xl font-raleway font-bold">ABOUT</h2>
+    <hr
+      class="mx-auto mt-1 w-24 h-0.5 border-t-0 bg-blue-700 opacity-100 dark:opacity-50"
+    />
+    <p class="text-lg mt-4 mx-12 lg:mx-32 xl:mx-60 2xl:mx-80">
+      I am a graduate student at Florida State University with a passion for
+      software engineering. Additionally, I march Euphonium in the FSU Marching
+      Chiefs and I actively participate in the ACM Chapter at FSU.
+    </p>
+    <div class="lg:grid grid-cols-2 mt-8">
+      <div class="lg:grid grid-cols-[30%_70%]">
+        <div></div>
+        <Image
+          class="object-scale-down h-52 lg:h-64 w-full"
+          src={ProfilePicture}
+          loading="lazy"
+          alt="David Silva"
+          title="David Silva"
+        />
+      </div>
+
+      <div class="lg:flex flex-col lg:items-start lg:text-start">
+        <h2
+          class="mt-6 lg:mt-0 mb-2 font-raleway font-bold text-[#728394] text-3xl"
+        >
+          Computer Science Student
+        </h2>
+        <div class="text-lg flex flex-row justify-center text-start">
+          <ul class="my-4">
+            <li>
+              <span class="font-bold">University:</span> Florida State University
+            </li>
+            <li>
+              <span class="font-bold">Degree:</span> M.S. in Computer Science
+            </li>
+            <li>
+              <span class="font-bold">Location:</span> Tallahassee, FL
+            </li>
+
+            <li>
+              <span class="font-bold">Email:</span> daverhan02@gmail.com
+            </li>
+          </ul>
+        </div>
+        <a href="resume.pdf" target="_blank" title="David Silva's Resume">
+          <button
+            class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l text-lg mt-4"
+            >View Resume</button
+          >
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
