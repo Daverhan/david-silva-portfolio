@@ -3,28 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I am a graduate student at Florida State University with a passion for software 
-        engineering. Additionally, I march Euphonium in the FSU Marching Chiefs 
-        and I actively participate in the ACM Chapter at FSU."
-    />
-    <title>David Silva Portfolio</title>
-    <link rel="icon" href="/src/assets/profile.webp" />
-  </head>
-  <body>
-    <main>
-      <Hero />
-      <About />
-      <Projects />
-      <Footer />
-    </main>
-  </body>
+  <main>
+    <Hero />
+    <About />
+    <Projects />
+  </main>
 </BaseLayout>
