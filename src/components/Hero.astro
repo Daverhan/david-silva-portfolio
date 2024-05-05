@@ -1,3 +1,31 @@
-<section>
-  <h1 class="text-center text-5xl mt-6">Hero Header</h1>
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section
+  class="h-screen flex flex-col bg-hero_background bg-center bg-cover bg-blend-overlay bg-white/60 justify-center"
+>
+  <div class="text-center text-[#45505b] min-w-full mb-52">
+    <h1 class="font-raleway font-bold text-5xl md:text-6xl">David Silva</h1>
+    <p class="font-poppins text-3xl md:text-4xl mt-2 text-[#0563bb]">
+      Software Developer
+    </p>
+    <div class="text-3xl flex flex-row space-x-8 mt-5 justify-center">
+      <a
+        href="https://github.com/Daverhan"
+        target="_blank"
+        title="David Silva's GitHub"
+        aria-label="GitHub Icon"
+        class="hover:text-[#0563bb]"><Icon name="github" /></a
+      >
+      <a
+        href="https://www.linkedin.com/in/david-anthony-silva/"
+        target="_blank"
+        title="David Silva's LinkedIn"
+        aria-label="LinkedIn Icon"
+        class="hover:text-[#0563bb]"
+        ><Icon name="linkedin" />
+      </a>
+    </div>
+  </div>
 </section>
