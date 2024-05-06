@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero_background: "url('/src/assets/hero-bg.avif')",
+        hero_background_placeholder:
+          "url('/src/assets/hero-bg-placeholder.avif')",
       },
     },
     fontFamily: {

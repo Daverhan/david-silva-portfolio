@@ -3,7 +3,8 @@ import { Icon } from "astro-icon/components";
 ---
 
 <section
-  class="h-screen flex flex-col bg-hero_background bg-center bg-cover bg-blend-overlay bg-white/60 justify-center"
+  class="h-screen flex flex-col bg-hero_background_placeholder bg-center bg-cover bg-blend-overlay bg-white/60 justify-center"
+  id="hero-section"
 >
   <div class="text-center text-[#45505b] min-w-full mb-52">
     <h1 class="font-raleway font-bold text-5xl md:text-6xl">David Silva</h1>
@@ -29,3 +30,15 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </section>
+
+<script type="module" is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const section = document.getElementById("hero-section");
+    const img = new Image();
+    img.src = "/hero-bg.avif";
+
+    img.onload = () => {
+      section.style.backgroundImage = `url('${img.src}')`;
+    };
+  });
+</script>
